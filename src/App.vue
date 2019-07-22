@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <transition enter-active-class="animated zoomInUp">
+      <router-view/>
+    </transition>
   </div>
 </template>
 

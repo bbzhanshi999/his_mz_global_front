@@ -55,7 +55,7 @@
                             this.$message.error("用户名或密码输入错误");
                         }
                     })
-                    .catch(err=>console.log(err))
+                    .catch(err=>this.$message.error("用户名或密码输入错误"))
             },
             reset () {
                 this.userInfo.username = '';

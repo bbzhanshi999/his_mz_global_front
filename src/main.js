@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './plugins/element.js'
+import 'animate.css/animate.min.css'
 
 
 Vue.config.productionTip = false
@@ -26,5 +27,7 @@ app.axios.interceptors.response.use(res => res, err => {
                 app.$router.push({path:'/'})
             }
         })
+    }else{
+        return Promise.reject(error);
     }
 });
